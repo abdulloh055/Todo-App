@@ -1,0 +1,76 @@
+const
+=
+document
+.
+getElementById('')
+querySelector('')
+getElementsByTagName('')
+function nameFunction() {return }
+.value
+.length
+.createElement('')
+.appendChild()
+.classList
+.toggle('')
+.addEventListener('event', callback function)
+.createTextNode('')
+.add('')
+if() {}
+>
+else {}
+&&
+.which
+===
+'keypress'
+
+
+inputLength function ochish
+input value uzunligini olamiz
+return shart
+
+listLength function ochish
+item uzunligini olamiz
+return shart
+
+##############################
+createListElement function ochamiz
+li ochamiz qiymatida createElement bolishi kere li tag sozdat qilish uchun
+li ga appendChild beramiz appendChild ichida document bilan createTextNode va buni ichida input value bolishi kere
+endi ul ichiga appendChild qilib li ni qoyish kere
+input value ni boshatamiz
+
+
+crossOut function yozamiz
+li ustiga bosganda done class bomasa bor qilamiz, bosa ochirish kere qilamiz
+bu uchun classList va toggle dan foydalanamiz
+endi li ga addEventListenezr, click, callback orniga tayyor crossOut function chaqirib qoyamiz
+
+deleteBtn ochamiz qiymat createElement button sozdat qilamiz 
+button ichiga prosta X harfini yozamiz
+appendChild va createTextNode yordamida
+li ichiga button joylimiz appendChild yordamida
+deleteBtn ga addEventListener, click, callback orniga tayyor deleteListItem function chaqiramiz
+
+deleteListItem function ochamiz
+deleteBtn ga bosganda li ga delete class paydo qilish kere  classList va add yordamida
+###############################
+
+
+addListAfterClick function ochamiz
+agar inputLength kotta bosa 0 dan
+createListElement function chaqiramiz 
+
+###############################
+
+
+addListAfterKeypress function ochamiz
+event ushab olamiz
+agar inputLength kota bosa 0 dan va dimiz event.keyCode aniq teng bosa 13 ga 
+createListElement chaqiramiz
+
+
+
+enterBtn ga addEventListener, click, callback orniga addListAfterClick chaqiramiz
+
+
+input addEventListener, keypress, addListAfterKeypress chaqiramiz
